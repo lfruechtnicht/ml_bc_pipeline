@@ -1,4 +1,3 @@
-import numpy as np
 from sklearn.base import TransformerMixin
 from sklearn.preprocessing import StandardScaler
 from scipy.spatial.distance import mahalanobis
@@ -6,6 +5,8 @@ from scipy.stats import chi2
 from scipy.linalg import inv
 import matplotlib.pyplot as plt
 import pandas as pd
+import progressbar
+import numpy as np
 import seaborn as sns
 sns.set_style("whitegrid")
 
@@ -24,7 +25,7 @@ class CustomScaler(TransformerMixin):
         return np.concatenate((X_head, X[:, self.dummies_idx]), axis=1)
 
 
-pddf = pd.DataFrame
+df = pd.DataFrame
 
 def mahalanobis_r_pd(X,mean,S_inv):
     data = []
