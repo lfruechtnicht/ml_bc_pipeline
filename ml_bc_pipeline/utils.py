@@ -88,7 +88,7 @@ def stal_plot(df, disp=False):
     ind_2 = i[M > thresh]
     ind[ind_1, ind_2] = 1
     #bar.update(ind_1)
-    #test
+    #testoiuhnlinljkn
 
     for e in (range(p + 2, n + 1)):
         # print(e)
