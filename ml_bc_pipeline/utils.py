@@ -35,7 +35,7 @@ def mahalanobis_r_pd(X,mean,S_inv):
 
 
 def qqplot(data):
-    '''takes continuous data and returns qq plot https://en.wikipedia.org/wiki/Q–Q_plot'''
+    '''takes continuous data and returns qq xxxplot https://en.wikipedia.org/wiki/Q–Q_plot'''
 
     df = data
     n = df.shape[0]
