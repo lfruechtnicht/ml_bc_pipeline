@@ -89,10 +89,8 @@ def stal_plot(df, disp=False):
 
     for e in (range(p + 2, n + 1)):
         ind_1 += 1
-        # print(ind_1)
         x_mean = df.loc[M.nlargest(e).index.values].mean()
         S = df.loc[M.nlargest(e).index.values].cov()
-        # print(S.shape)
         S_inv = inv(S)
         M = mahalanobis_r_pd(df, x_mean, S_inv)
         ind_2 = i[M > thresh]
