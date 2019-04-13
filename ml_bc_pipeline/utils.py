@@ -10,6 +10,7 @@ import numpy as np
 import seaborn as sns
 sns.set_style("whitegrid")
 
+
 class CustomScaler(TransformerMixin):
     def __init__(self, continuous_idx, dummies_idx):
         self.continuous_idx = continuous_idx
