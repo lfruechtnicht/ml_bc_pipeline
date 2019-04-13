@@ -99,7 +99,6 @@ def stal_plot(df, disp=False):
         ind_2 = i[M > thresh]
         # print(ind_2)
         ind[ind_1, ind_2] = 1
-        #bar.update(ind_1)
 
     out_ind = ind_2
     plot = pd.DataFrame(ind)
