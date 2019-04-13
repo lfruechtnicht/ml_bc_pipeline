@@ -1,3 +1,4 @@
+import numpy as np
 from sklearn.base import TransformerMixin
 from sklearn.preprocessing import StandardScaler
 from scipy.spatial.distance import mahalanobis
@@ -5,11 +6,8 @@ from scipy.stats import chi2
 from scipy.linalg import inv
 import matplotlib.pyplot as plt
 import pandas as pd
-import progressbar
-import numpy as np
 import seaborn as sns
 sns.set_style("whitegrid")
-
 
 class CustomScaler(TransformerMixin):
     def __init__(self, continuous_idx, dummies_idx):
