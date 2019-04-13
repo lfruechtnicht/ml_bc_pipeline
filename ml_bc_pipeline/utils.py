@@ -81,7 +81,7 @@ def stal_plot(df, disp=False):
 
     x_mean = df.iloc[sample].mean()
     S = df.iloc[sample].cov()
-    # print(S.shape)
+
     S_inv = inv(S)
     M = mahalanobis_r_pd(df, x_mean, S_inv)
     ind_2 = i[M > thresh]
