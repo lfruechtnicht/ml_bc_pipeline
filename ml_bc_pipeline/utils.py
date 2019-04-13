@@ -24,7 +24,7 @@ class CustomScaler(TransformerMixin):
         return np.concatenate((X_head, X[:, self.dummies_idx]), axis=1)
 
 
-df = pd.DataFrame
+df = pd.DataFrame#test
 
 def mahalanobis_r_pd(X,mean,S_inv):
     data = []
