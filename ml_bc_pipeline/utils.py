@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 sns.set_style("whitegrid")
-# remote
+
 class CustomScaler(TransformerMixin):
     def __init__(self, continuous_idx, dummies_idx):
         self.continuous_idx = continuous_idx
