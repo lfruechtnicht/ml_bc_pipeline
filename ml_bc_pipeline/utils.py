@@ -96,7 +96,6 @@ def stal_plot(df, disp=False):
         S_inv = inv(S)
         M = mahalanobis_r_pd(df, x_mean, S_inv)
         ind_2 = i[M > thresh]
-        # print(ind_2)
         ind[ind_1, ind_2] = 1
 
     out_ind = ind_2
