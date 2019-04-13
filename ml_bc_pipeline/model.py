@@ -2,7 +2,7 @@ import sys
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.pipeline import Pipeline
-from tools import CustomScaler
+from utils import CustomScaler
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV
 from sklearn.neural_network import MLPClassifier
