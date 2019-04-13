@@ -88,7 +88,6 @@ def stal_plot(df, disp=False):
     ind[ind_1, ind_2] = 1
 
     for e in (range(p + 2, n + 1)):
-        # print(e)
         ind_1 += 1
         # print(ind_1)
         x_mean = df.loc[M.nlargest(e).index.values].mean()
